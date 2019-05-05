@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :doorcountytrees, Doorcountytrees.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "docker",
   database: "doorcountytrees_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
