@@ -16,6 +16,9 @@ RUN mkdir /app
 COPY . /app
 WORKDIR /app
 
+# install project dependencies
+RUN mix deps.get
+
 # node needed for live reload
 RUN cd assets && npm install
 
